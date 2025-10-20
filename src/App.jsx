@@ -10,6 +10,7 @@ import Payment from './Components/Payment/Payment';
 import Confirmation from './Components/Payment/Confirmation';
 import Registration from './Components/Registration';
 import Login from './Components/Login';
+import Hello from "./Components/Hello";
 
 import FavoritesPage from './Components/Home/FavoritesPage';
 
@@ -27,6 +28,8 @@ let allRoute = createBrowserRouter([
       { path: 'checkout', element: <Checkout /> },
       { path: 'payment', element: <Payment /> },
       { path: 'Confirmation', element: <Confirmation /> },
+      { path: 'hello', element: <Hello name="Toqa" /> },
+
     ]
   }
 ]);
