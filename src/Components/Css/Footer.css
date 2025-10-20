@@ -1,0 +1,93 @@
+.sponsorCompanys{
+    background-color: #DA5E42;
+    padding-bottom: 50px;
+  }
+  .sposer1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 40px;
+    gap: 150px;
+  }
+  .sposer2{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 40px;
+    gap: 150px;
+  }
+  .footer{
+    background: #D84727;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .logoFooter{
+    padding-bottom: 40px;
+  }
+  .title{
+    font-family: 'Taviraj';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 34.12px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+  
+  }
+  .des{
+    font-family: 'Taviraj';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 29.3px;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+  }
+  .span1{
+    margin-left:70px;
+    font-family: 'Taviraj';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0.03em;
+  }
+  .socialMedia{
+    display: flex;
+    cursor: pointer;
+    gap: 30px;
+    padding-top: 10px;
+  }
+  .title2{
+    font-family: 'Taviraj';
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 40.94px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+  }
+  .hrCustom{
+    height: 1px; 
+    background-color: #FFFFFF; 
+    width: 60px; 
+    opacity: 1; 
+  }
+  
+  .getInTouch{
+    font-family: 'Taviraj';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+  }
+  .des2{
+    font-family: 'Taviraj';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 36.3px;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    cursor: pointer;
+  }
+  

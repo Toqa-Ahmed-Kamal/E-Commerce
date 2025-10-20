@@ -1,0 +1,206 @@
+.latestDeal {
+  font-family: 'Taviraj';
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  margin-left: 210px;
+}
+
+.hrCustomlatestDeal {
+  height: 1px;
+  width: 120px;
+  opacity: 1;
+  margin-left: 210px;
+}
+
+.latestDealParent {
+  padding-bottom: 150px;
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+}
+
+.latestDeal1 {
+  margin: 40px;
+  padding: 10px;
+  -webkit-box-shadow: 1px 1px 15px 3px rgba(212, 210, 210, 1);
+  -moz-box-shadow: 1px 1px 15px 3px rgba(212, 210, 210, 1);
+  box-shadow: 1px 1px 15px 3px rgba(212, 210, 210, 1);
+  position: relative;
+}
+
+.latestDealImg {
+  width: 250px;
+  height: 221px;
+}
+
+.latestDealDes {
+  font-family: 'Taviraj';
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+  text-align: left;
+  color: #333333;
+  padding-top: 20px;
+  margin-left: 10px;
+}
+
+.offer {
+  font-family: 'Taviraj';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #777777;
+}
+
+.oldPrice {
+  font-family: 'Taviraj';
+  text-decoration: line-through red;
+  color: grey;
+  font-size: 15px;
+}
+
+.newPrice {
+  font-family: 'Taviraj';
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+  color: #333333;
+}
+
+.LoveAndCart {
+  display: none;
+  position: absolute;
+}
+
+.latestDeal1:hover .LoveAndCart {
+  display: flex;
+  justify-content: space-evenly;
+  transition: ease-out 0.6s;
+}
+
+.latestDeal1:hover {
+  padding-bottom: 110px;
+}
+
+.latestDealBtn {
+  background-color: #D84727;
+  padding: 10px 15px;
+  border: none;
+  color: #FFFFFF;
+  font-family: 'Taviraj';
+  font-size: 15px; 
+  line-height: 34.12px;
+  letter-spacing: 0.02em;
+  transition: background-color 0.3s; 
+  margin-left: 30px;
+}
+
+.latestDealBtnPlus {
+  width: 30px;
+  height: 30px;
+  background-color: #D84727;
+  color: #FFFFFF;
+  border: none;
+  margin-left: 35px;
+}
+
+.latestDealBtnQuantity {
+  margin-left: 39px;
+  font-size: 20px;
+}
+
+.latestDealBtnminus {
+  width: 30px;
+  height: 30px;
+  border: 2px solid;
+  border-color: #b4b4b4d7;
+  background-color: transparent;
+}
+
+.latestDealBtnRemove {
+  background-color: #D84727;
+  padding: 2px 20px;
+  border: none;
+  color: #FFFFFF;
+  font-family: 'Taviraj';
+  font-size: 15px;
+  line-height: 34.12px;
+  letter-spacing: 0.02em;
+  margin-top: 15px;
+  margin-left: 23px;
+}
+
+.Love {
+  border: 2px solid;
+  border-color: #D84727;
+  background-color: transparent;
+  padding: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.cart-parent {
+  margin-left: 50px;
+}
+
+@media (min-width: 1024px) {
+  .latestDeal1 {
+      width: 15%;
+      margin: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .latestDeal1 {
+      width: 45%; 
+      margin: 20px;
+  }
+  .latestDeal {
+    margin-left: 0;
+  }
+  
+  .hrCustomlatestDeal {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .latestDealImg {
+      width: 150px; 
+      height: auto; 
+
+  }
+  .cartBtn{
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    margin-right: 60px;
+  }
+  .latestDeal {
+    margin-left: 0;
+  }
+  
+  .hrCustomlatestDeal {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .latestDealImg {
+      width: 100px;
+      height: auto; 
+  }
+  .latestDeal {
+    margin-left: 0;
+  }
+  
+  .hrCustomlatestDeal {
+    margin-left: 0;
+  }
+}

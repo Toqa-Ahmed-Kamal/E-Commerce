@@ -1,0 +1,198 @@
+.tricking {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+.trickingHr {
+    width: 200px;
+    margin-left: 60px;
+    color: #999999;
+}
+.trickingImg {
+    margin-bottom: 10px; 
+    margin-left: 40px;
+}
+.trickingText {
+    font-family: 'Taviraj';
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-align: center; 
+    color: #999999;
+    display: flex;
+    flex-wrap: wrap;
+}
+.checkOutPage {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+.detailsOrderParent {
+    width: 30%;
+    height: 50%;
+    margin-left: 10%;
+    box-sizing: border-box; 
+    -webkit-box-shadow: 1px 7px 22px -5px rgba(214, 210, 210, 1);
+    -moz-box-shadow: 1px 7px 22px -5px rgba(214, 210, 210, 1);
+    box-shadow: 1px 7px 22px -5px rgba(214, 210, 210, 1);
+    display: flex;
+    flex-direction: column; 
+}
+.detailsOrder {
+    font-family: 'Taviraj';
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #333333;
+    margin: 20px 30px 40px;
+}
+.detailsOrderPrice {
+    font-family: 'Taviraj';
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 60px;
+    letter-spacing: 0.03em;
+    margin-left: 40px;
+}
+.detailsOrderPriceSpan {
+    margin-left: 100px;
+}
+.detailsOrderHr {
+    width: 90%;
+    margin-left: 40px;
+    color: #000000;
+}
+.detailsOrderPriceSpanGrand {
+    font-family: 'Taviraj';
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 60px;
+    letter-spacing: 0.03em;
+    margin-left: 50px;
+}
+.billingAddressParant {
+    -webkit-box-shadow: 1px 7px 22px -5px rgba(214, 210, 210, 1);
+    -moz-box-shadow: 1px 7px 22px -5px rgba(214, 210, 210, 1);
+    box-shadow: 1px 7px 22px -5px rgba(214, 210, 210, 1);
+    width: 35%;
+    margin-right: 250px;
+    padding-bottom: 40px;
+}
+.billingAddress {
+    font-family: 'Taviraj';
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #333333;
+    margin-left: 40px;
+}
+.theForm {
+    margin-left: 50px;
+}
+.billingAddressLabel {
+    font-family: 'Taviraj';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: #000000;
+    margin-bottom: 10px;
+}
+.billingAddressInput {
+    width: 90%;
+    border: none;
+    border-bottom: 2px solid rgb(220, 219, 219);
+    font-family: 'Taviraj';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: #000000;
+    margin-bottom: 10px;
+}
+.cityAndZip {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.CheckoutBtns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 40%;
+    padding-bottom: 130px;
+}
+.continueShoppingBtn {
+    border: 2px solid;
+    border-color: #D84727;
+    background-color: transparent;
+    width: 250px;
+    height: 70px;
+    color: #D84727;
+}
+.placeOrderBtn {
+    background-color: #D84727;
+    border: none;
+    width: 250px;
+    height: 70px;
+    color: #FFFFFF;
+    font-family: 'Taviraj';
+    font-size: 20px;
+    line-height: 34.12px;
+    letter-spacing: 0.02em;
+    margin-left: 90px;
+}
+@media (max-width: 767px) {
+    .tricking {
+        flex-direction: column;
+        align-items: center;
+    }
+    .trickingHr {
+        width: 100%; 
+        margin-left: 0;
+    }
+    .detailsOrderParent {
+        width: 90%;
+        margin-left: 0;
+    }
+    .detailsOrderPriceSpan {
+        margin-left: 0;
+    }
+    .billingAddressParant {
+        width: 90%;
+        margin-right: 0; 
+    }
+    .CheckoutBtns {
+        margin-left: 0;
+    }
+    .placeOrderBtn {
+        margin-left: 0;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .tricking {
+        flex-direction: row; 
+    }
+    .detailsOrderParent {
+        width: 45%; 
+        margin-left: 2.5%; 
+    }
+    .billingAddressParant {
+        width: 45%; 
+        margin-right: 2.5%; 
+    }
+    .CheckoutBtns {
+        flex-direction: row; 
+        justify-content: space-between; 
+    }
+}

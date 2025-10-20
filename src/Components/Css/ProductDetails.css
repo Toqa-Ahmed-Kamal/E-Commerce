@@ -1,0 +1,200 @@
+/* ===== Breadcrumb ===== */
+.theHead{
+  font-family:'Taviraj';
+  font-size:16px;
+  font-weight:400;
+  line-height:27.3px;
+  letter-spacing:.02em;
+  text-align:left;
+  width:85%;
+  max-width:1200px;
+  margin:0 auto 32px;
+}
+.theHeadSpan{ color:#D84727; }
+
+/* ===== Tabs ===== */
+.tabs{
+  display:flex;
+  flex-wrap:wrap;
+  border-bottom:1px solid #ddd;
+  justify-content:space-evenly;
+  margin:20px auto 0;
+  width:85%;
+  max-width:1200px;
+}
+.tab{
+  padding:10px 20px;
+  border:none;
+  background:transparent;
+  cursor:pointer;
+  position:relative;
+  margin-right:15px;
+  transition:color .3s ease;
+  font-weight:500;
+  color:#777;
+}
+.tab:last-child{ margin-right:0; }
+.tab.active{ color:#D84727; }
+.tab.active:after{
+  content:'';
+  display:block;
+  height:2px;
+  background:#D84727;
+  width:85%;
+  position:absolute;
+  left:0;
+  bottom:-5px;
+}
+.tab-content{
+  padding:20px;
+  border-radius:5px;
+  margin-top:10px;
+  width:85%;
+  max-width:1200px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+/* ===== Product area (image left, details right) ===== */
+.product-card{
+  display:flex;
+  align-items:flex-start;
+  gap:48px;
+  border-radius:5px;
+  padding:10px;
+  margin:5px auto 0;
+  width:85%;
+  max-width:1200px;
+}
+.product-image{ flex:0 0 440px; }
+.product-image img{
+  width:100%;
+  max-width:440px;
+  border-radius:5px;
+  display:block;
+}
+
+.product-details{ flex:1; min-width:0; }
+
+.productTitle{
+  font-family:'Taviraj';
+  font-size:60px;
+  font-weight:400;
+  line-height:50px;
+  letter-spacing:.02em;
+  margin:0 0 12px 0;
+}
+.productoldPrice{
+  font-family:'Taviraj';
+  text-decoration:line-through red;
+  color:grey;
+  font-size:20px;
+  margin:6px 0;
+}
+.productPrice{
+  font-family:'Taviraj';
+  font-size:24px;
+  font-weight:500;
+  line-height:40.94px;
+  letter-spacing:.02em;
+  text-align:left;
+  color:#111;
+  margin:0 0 10px 0;
+}
+
+/* ===== Buttons & quantity (under details, centered within that column) ===== */
+.firstBtns2{
+  display:flex;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:30px;
+  margin-top:40px;
+}
+.quantity-controls{
+  display:inline-flex;
+  align-items:center;
+  gap:14px;
+}
+.MinusBtn, .plusBtn{
+  background-color:#D84727;
+  color:#f0f0f0;
+  border:none;
+  width:40px;
+  height:40px;
+  font-size:18px;
+}
+.MinusBtn.disabledBtn{
+  background-color:transparent;
+  border:#bbbbbb 1px solid;
+  cursor:not-allowed;
+  color:#7f7f7f;
+}
+.quantityBtn{ font-size:20px; min-width:24px; text-align:center; }
+
+.btn3{
+  background-color:#D84727;
+  border:none;
+  width:203px;
+  height:62px;
+  color:#fff;
+  font-family:'Taviraj';
+  font-size:20px;
+  line-height:34.12px;
+  letter-spacing:.02em;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+}
+.imgbtn{ margin-right:10px; }
+
+.btn4{
+  border:2px solid #D84727;
+  background:transparent;
+  width:140px;
+  height:62px;
+}
+
+/* ===== Details text ===== */
+.tabContentTitle{
+  font-family:'Taviraj';
+  font-size:24px;
+  font-weight:400;
+  line-height:32px;
+  letter-spacing:.02em;
+  text-align:left;
+  color:#333;
+  margin:12px 0 6px;
+}
+.tabContentDetails{
+  font-family:'Nunito';
+  font-size:16px;
+  font-weight:400;
+  line-height:28px;
+  letter-spacing:.02em;
+  text-align:left;
+  color:#555;
+}
+
+/* ===== Responsive ===== */
+@media (max-width:1024px){
+  .productTitle{ font-size:48px; line-height:48px; }
+  .product-image{ flex:0 0 380px; }
+}
+@media (max-width:768px){
+  .theHead, .tabs, .tab-content, .product-card{ width:92%; }
+  .product-card{
+    flex-direction:column;
+    align-items:center;
+    gap:24px;
+  }
+  .product-image{ flex:0 0 auto; width:100%; }
+  .product-image img{ max-width:420px; margin:0 auto; }
+  .firstBtns2{ justify-content:center; }
+}
+@media (max-width:480px){
+  .theHead{ font-size:14px; }
+  .productTitle{ font-size:30px; line-height:36px; }
+  .productPrice{ font-size:18px; line-height:28px; }
+  .tabContentTitle{ font-size:20px; }
+  .tabContentDetails{ font-size:14px; }
+}

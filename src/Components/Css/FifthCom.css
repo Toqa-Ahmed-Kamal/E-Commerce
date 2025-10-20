@@ -1,0 +1,184 @@
+.category-tabs {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-right: 190px;
+  padding-bottom: 40px;
+  color: #000000;
+}
+
+.active-tab,
+.tab {
+  border: none;
+  font-family: 'Taviraj';
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  background-color: transparent;
+  padding: 10px;
+}
+
+.active-tab {
+  color: #000000;
+}
+
+.tab {
+  color: #333333 !important;
+}
+
+.active-tab:hover {
+  background-color: transparent;
+  color: white;
+  background-color: #D84727;
+}
+
+.tab:hover {
+  background-color: #D84727;
+  color: white !important;
+}
+
+.categoryTabsCustomHr {
+  border: none;
+  height: 1px;
+  background-color: black;
+  margin: 4px 20px;
+  width: 50%;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  border: none;
+}
+
+.col-4 {
+  padding: 15px;
+  border: none;
+  flex: 0 0 30% !important;
+}
+
+.card {
+  display: flex !important;
+  flex-direction: row !important;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  border: none !important;
+  align-items: center;
+  padding: 15px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-image {
+  flex-shrink: 0;
+  border: none;
+}
+
+.card-img-left {
+  width: 150px !important;
+  height: 150px !important;
+}
+
+.card-body {
+  padding: 15px;
+  max-width: 150px !important;
+  margin-left: 15px;
+}
+
+.card-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+  word-wrap: break-word;
+  white-space: normal;
+  overflow-wrap: break-word;
+  font-family: 'Taviraj';
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #333333;
+}
+
+.card-price {
+  font-family: 'Taviraj';
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #222222;
+}
+
+.card p {
+  font-size: 12px !important;
+}
+
+.CardBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.line {
+  width: 500px;
+  margin: 0 10px;
+  border: none;
+  border-top: 2px solid #a9a9a9;
+  height: 2px;
+}
+
+.RecentNewsBtn2 {
+  width: 200px;
+  border: 2px solid;
+  border-color: #D84727;
+  background-color: transparent;
+  padding: 12px 35px;
+  color: #D84727;
+}
+
+.RecentNewsBtn2:hover {
+  background-color: #D84727;
+  color: #FFFFFF;
+  transition: ease-out 0.3;
+}
+
+@media (max-width: 768px) {
+  .col-4 {
+    flex: 1 0 100% !important;
+    max-width: 70% !important;
+  }
+
+  .card {
+    flex-direction: column !important;
+    margin: auto;
+  }
+
+  .card-img-left {
+    width: 100% !important;
+    height: 200px !important;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .card-body {
+    max-width: 100% !important;
+  }
+  .category-tabs {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+}
+
+.myLink {
+  text-decoration: none !important;
+  color: inherit;
+}

@@ -1,0 +1,231 @@
+.offcanvas-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; 
+}
+
+.offcanvas-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%; 
+  max-width: 1500px; 
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow-y: auto; 
+  max-height: 80vh; 
+}
+
+.close-btn {
+  width: 40px;
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  float: right; 
+  background-color: #F1DDC9;
+  border-radius: 80px;
+}
+.emptyCartImg{
+  width: 300px;
+}
+.emptyCartText{
+  font-family: 'Taviraj';
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #333333;
+  padding-top: 50px;
+}
+.allProductInCart {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.itemsInCart {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.imgItem {
+  width: 150px;
+  height: 150px;
+  margin-right: 10px;
+  margin-bottom: 30px;
+}
+.titleItem {
+  font-family: 'Taviraj';
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #333333;
+  margin-left: 50px;
+}
+.titleItemSpan {
+  font-family: 'Taviraj';
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #333333;
+}
+.allProductInCartHr {
+  color: black;
+  width: 85%;
+  margin-left: 50px;
+}
+.allBtnsInCart {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-right: 50px;
+}
+.MinusBtnInCart {
+  background-color: #D84727;
+  color: #f0f0f0;
+  border: none;
+  width: 30px;
+  height: 30px;
+  font-size: 18px;
+}
+.MinusBtnInCart.disabledBtn {
+  background-color: transparent;
+  border: #bbbbbb 1px solid;
+  cursor: not-allowed;
+  color: #7f7f7f;
+}
+.quantityBtnInCart {
+  font-size: 20px;
+}
+.plusBtnInCart {
+  background-color: #D84727;
+  color: #f0f0f0;
+  border: none;
+  width: 30px;
+  height: 30px;
+  font-size: 18px;
+  margin-right: 30px;
+}
+.removeBtnInCart {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  border: 2px solid;
+  border-color: #D84727;
+  background-color: transparent;
+  color:  #D84727;
+  margin-left: 20px;
+}
+.totalItemPrice {
+  font-family: 'Taviraj';
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #333333;
+  margin-top: 20px;
+}
+.SubtotalInCart {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+  margin-right: 70px;
+  font-family: 'Taviraj';
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #333333;
+  margin-top: 40px;
+}
+.SubtotalInCartSpan {
+  font-family: 'Taviraj';
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #333333;
+  margin-left: 40px;
+}
+.goToCheckoutBtn {
+  width: 100%;
+  height: 60px;
+  background-color: #D84727;
+  color: #f0f0f0;
+  border: none;
+  font-family: 'Taviraj';
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  margin-top: 40px;
+}
+@media (max-width: 768px) {
+  .offcanvas-content {
+      width: 95%; 
+      padding: 15px; 
+  }
+
+  .imgItem {
+      width: 100px; 
+      height: 100px; 
+  }
+
+  .titleItem {
+      font-size: 16px; 
+      margin-left: 20px; 
+  }
+
+  .totalItemPrice {
+      font-size: 18px; 
+  }
+
+  .SubtotalInCart {
+      margin-right: 20px; 
+  }
+
+  .goToCheckoutBtn {
+      height: 50px; 
+      font-size: 20px; 
+  }
+}
+
+@media (max-width: 1024px) {
+  .offcanvas-content {
+      width: 90%; 
+      padding: 20px; 
+  }
+
+  .imgItem {
+      width: 120px; 
+      height: 120px;
+  }
+
+  .titleItem {
+      font-size: 18px; 
+  }
+
+  .totalItemPrice {
+      font-size: 20px; 
+  }
+
+  .goToCheckoutBtn {
+      height: 55px; 
+  }
+}

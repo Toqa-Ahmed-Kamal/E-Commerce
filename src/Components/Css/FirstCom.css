@@ -1,0 +1,191 @@
+#carouselExampleIndicators{
+    padding-bottom: 150px;
+    width: 75%;
+    background-color:#F1DDC9 ;
+    background-position: center;
+    margin-left: 190px;
+  }
+  .carousel-inner{
+    margin-left: 150px;
+    position: absolute;
+    bottom: -100px;
+  }
+  .d-block{
+    width: 300px;
+  }
+  .firstDiv{
+    display: flex;
+    flex-wrap: wrap;
+  
+  }
+  .firstTitle{
+    font-family: 'Taviraj';
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 80px;
+    letter-spacing: 0.02em;
+    margin-left: 140px;
+  } 
+  .firstDes{
+    margin-left: 140px;
+    font-family: 'Nunito';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.82px;
+    letter-spacing: 0.03em; 
+  }
+  .hrCustom2{
+    height: 1px; 
+    width: 130px; 
+    opacity: 1; 
+    margin-left: 140px;
+  
+  }
+  .Discover{
+    margin-left: 140px;
+    font-family: 'Taviraj';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 27.3px;
+    letter-spacing: 0.03em;
+    text-align: left;
+  }
+  .hrCustom3{
+    height: 1px; 
+    width: 90px; 
+    opacity: 1; 
+    margin-left: 140px;
+  }
+  .firstBtns{
+    display: flex;
+    margin-left: 140px;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .btn1{
+    background-color: #D84727;
+    border: none;
+    width: 203px;
+    height: 62px;
+    color: #FFFFFF;
+    font-family: 'Taviraj';
+    font-size: 20px;
+    line-height: 34.12px;
+    letter-spacing: 0.02em;
+  }
+  .imgbtn{
+    margin-right: 10px;
+  }
+  .btn2{
+    border: 2px solid;
+    border-color: #D84727;
+    background-color: transparent;
+    width: 140px;
+  
+  }
+  .carousel-container {
+    display: flex;          
+    justify-content: flex-end; 
+    align-items: center;      
+    gap: 10px;               
+    position: absolute;      
+    right: 20px;            
+    width: 85%;             
+    bottom: 40px;
+  }
+  .carousel-control-prev-icon{
+    position: absolute;      
+    right: -850px;            
+    border: 2px solid;
+    border-color: #D84727;
+    background-color: transparent;
+    font-size: 90px;   
+    width: 20%;      
+    height: 150px;     
+    background-size: 100%;  
+    padding: 19px;   
+  
+  }
+  .carousel-control-next-icon{
+    position: absolute;      
+    left: 40px;
+    background-color: #D84727;
+    border: none;
+    font-size: 90px;   
+    width: 20%;      
+    height: 150px;      
+    background-size: 100%; 
+    padding: 21px;     
+  }
+  @media (max-width: 768px) {
+    #carouselExampleIndicators {
+      width: 100%;
+      margin-left: 0;
+    }
+  
+    .carousel-inner {
+      margin-left: 0;
+    }
+  
+    .d-block {
+      width: 100%;
+    }
+  
+    .firstDiv {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .firstTitle, .firstDes, .Discover, .hrCustom2, .hrCustom3 {
+      margin-left: 0;
+      text-align: center;
+    }
+  
+    .firstBtns {
+      margin-left: 0;
+      justify-content: center;
+    }
+    .carousel-control-prev-icon{
+      position: absolute;      
+      right: -250px;            
+      bottom: -50px;
+    }
+    .carousel-control-next-icon{
+      position: absolute; 
+      left: 20px;
+      bottom: -50px;
+
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    #carouselExampleIndicators {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    .carousel-inner {
+      margin-left: 0;
+    }
+  
+    .d-block {
+      width: 80%;
+    }
+  
+    .firstDiv {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .firstTitle, .firstDes, .Discover, .hrCustom2, .hrCustom3 {
+      margin-left: 0;
+      text-align: center;
+    }
+  
+    .firstBtns {
+      margin-left: 0;
+      justify-content: center;
+    }
+  }
+  
